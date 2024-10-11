@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Sedan+SC&display=swap');
+
+/*.sedan-sc-regular {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  .aboreto-regular {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+/*variaveis*/
+:root{
+    --font-color1: #000; /*cor da fonte 1*/
+    --font-color2:#fff; /*cor dafonte 2*/
+    --font-color3: rgb(49, 49, 49);
+    --font-color4: gold; /*cor da fonte 4*/
+    --bg-color1:rgb(85, 1, 1);  /*cor do fundo 1*/
+    --bg-color2:#fff;  /*cor do fundo 2*/
+    --bg-color3:#000000; /*cor do fundo 3*/
+    --bg-color4:gold;
+    --bg-color5:rgb(180, 180, 180);
+}
+* {
+    margin:0; /*zera todas as margens*/
+    padding: 0; /*zera todos os espaçamentos*/
+    box-sizing: border-box; /*limpa as bordas do campo*/
+    text-decoration: none; /*tira a linha de baixo do texto*/
+    list-style: none; /*tira as bolinhas da lista não odenada*/
+    font-family: "Aboreto", system-ui;
+}
+/*Corpo da Página*/
+body{
+    background: var(--bg-color2); /*coloca cor de fundo usando variável*/
+}
+/*Cabeçalho da Página*/
+header{
+    display: flex; /*deixa a tela flexível*/
+    justify-content: space-between; /*coloca imagem de um lado e o nav do outro*/
+    padding-left: 20px; /*coloca 20px de espaçamento a esuqerda*/
+    padding-right: 20px; /*coloca 20px de espacamento a direita */
+    background: var(--bg-color1); /*coloca cor de fundo usando variavel*/
+    align-items: center;
+    width:100%;
+    height:75px;
+    position:fixed;
+    box-shadow:1px 40px 70px var(--bg-color3);
+    z-index:1000;
+}
+/*Section*/
+section{
+    display: flex; /*deixa a tela flexível*/
+    justify-content: space-between; /*coloca a imagem de um lado e nav do outro*/
+    margin-top: 100px; /*coloca margem superior de 100px*/
+}
+header h1{
+    margin-top:3%;
+    margin-left:-38%;
+    color:var(--font-color4);
+    font-size: 30px;
+    text-decoration:overline;
+    transition:0.5s;
+}
+header h1:hover{
+    margin-top:5%;
+}
+/*imagem do header*/
+header img{
+    width: 100px; /*largura de 100px*/
+    height: 100px; /*altura de 100px*/
+    margin:20px 20px;
+    margin-top:5%;
+    box-shadow:10px 10px 10px black;
+    transition:0.5s;
+}
+#busca{
+    margin-top:-3%;
+    margin-left:10%;
+    height:25px;
+    width:420px;
+    border-style:none;
+}
+nav{
+    margin-top:3%;
+}
+/*nav ul e li*/
+nav ul li{
+    text-decoration: none; /*tira a linha de baixo do texto*/
+    display: inline; /*deixa os elementos todos em linha*/
+    width: 120px; /*largura de 120px*/
+    height: 30px; /*altura de 30px*/
+    margin: 2px; /*todos os 4 lados com 2 px*/
+    padding: 1px 10px 1px 10px ; /*espaçamento de 1px top 10px right 1px bottom 10px left */
+    color: var(--font-color2); /*coloca a cor da fonte usando variável*/
+    font-size: 20px; /*tamanho da font de 1rem= 16px*/
+    border-radius: 15px; /*arredonda borda com 15px*/
+    justify-content: center; /*deixa os elementos no centro*/
+    align-items: center; /*alingamento dos items ao centro*/
+
+}
+/*nav ul li e a*/
+nav ul li a{
+    color: var(--font-color2);
+}
+/*hover ao colocar mouse em cima do elemento*/
+nav ul li a:hover{
+    font-style:oblique;
+    text-decoration: underline; /*coloca um sublinhado no texto ao passar o mouse*/
+}
+video{
+    width:100%;
+}
+#msg{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:-10%;
+    font-size: 30px;
+    text-shadow:black 2px 2px;
+    color:var(--bg-color2);
+}
+/*classe bucsador*/
+.buscador{
+    background:var(--bg-color3);
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10%;
+    width:37%;
+    flex-direction: column; /*coloca os elementos em coluna*/
+    align-items: center; /*alinha os itens ao centro*/
+    color:var(--bg-color2);
+    transition:0.5s;
+}
+.buscador:hover{
+    width:60%;
+}
+.buscador p{
+    width: 240px;
+    display: flex; /*deixa a tela flexível*/
+    margin-top: 10px; /*margem top de 10px*/
+    flex-direction: column; /*coloca os elementos em coluna*/
+    justify-content: center; /*deixa os elementos ao centro*/
+    align-items: center; /*alinha os itens ao centro*/
+
+}
+/*elemento form da classe buscador*/
+.buscador form{
+    color:var(--bg-color2);
+    width: 500px;
+    border: 1px solid var(--bg-color3);
+    padding: 10px; /* coloca os espaçamento de 10px*/
+    display: flex; /*deixa a tela flexível*/
+    margin: 10px 0px; /*margem de 10px top e bottom 0px right e left*/
+    justify-content: center; /*deixa os elementos ao centro*/
+    align-items: center; /*alinha os itens ao centro*/
+    transition:0.5s;
+}
+.buscador form:hover{
+    gap:15px;
+    width:800px;
+}
+/*classe btnbuscar*/
+.btnBuscar{
+    width: 70px;
+    height: 40px;
+    color:var(--font-color1);
+    border-style: none;
+    border-radius: 10px; /*arredondar a borda com 10px*/
+}
+/*hover na classe btnBuscar*/
+.btnBuscar:hover{
+    box-shadow: 1px 1px 5px var(--font-color2); /*cor de sombra ao passar mouse*/
+}
+#produtos{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-decoration:underline;
+    margin-top:10%;
+    color:var(--font-color4);
+}
+.cartazes{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:500px;
+    box-shadow: 1px -20px 20px var(--bg-color3);
+    gap:70px;
+    background:var(--bg-color1);
+    margin-top: -1%;
+}
+.cartazes2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:500px;
+    box-shadow: 1px 10px 10px var(--bg-color3);
+    gap:70px;
+    background:var(--bg-color1);
+    margin-top: -7%;
+}
+.card{
+    background:var(--bg-color2);
+    width:325px;
+    height:205px;
+    
+    box-shadow:5px 5px 6px black;
+    overflow:hidden;
+    transition:0.5s;
+}
+.card:hover{
+    border-radius:12px;
+    height:425px;
+}
+.card img{
+    width:100%;
+}
+.card div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    padding:20px;
+    height:50%;
+}
+.card h1{
+    font-size: 1.2rem;
+    transition:0.5s;
+}
+.card:hover h1{
+    margin-top:-15%;
+}
+.card h2{
+    font-size: 0.9rem;
+    text-align:center;
+    color:var(--font-color3);
+}
+.card button{
+    background:var(--bg-color1);
+    border:none;
+    height:35px;
+    width:80%;
+    color:var(--font-color2);
+    font-size: 1.2rem;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.5s;
+}
+.card button:hover{
+    background:rgb(235, 0, 0);
+}
+footer{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-top:10%;
+    background:var(--bg-color3);
+    height:500px;
+}
+.img-redes{
+    display:flex;
+    margin-left:5%;
+    width:50px;
+    transition:0.5s;
+}
+.img-redes:hover{
+    margin-top:-3%;
+    width:65px;   
+}
+footer p{
+    display: flex;
+    margin-left:-26%;
+    margin-top: 25%; /*margem superior de 200px*/
+    justify-content: center; /*deixa os elementos ao centro*/
+    align-items: center; /*alinha os itens ao centro*/
+    color: var(--font-color2); /*coloca cor na fonte usando variavel*/
+    font-size: 1rem; /*tamanho da fonte de 1rem= 16px*/
+}
+/*responsividade mobile*/
+@media (max-width:500px){
+    body{
+    width:100%;
+    }
+    header img{
+        margin-left:-5%;
+        scale:50%;
+    }
+    #busca{
+        width:150px;
+        margin-top:-5%;
+        margin-left:-5%;
+        height:12px;
+    }
+    nav ul {
+        margin-top:10%;
+    }
+    nav ul li a{
+        font-size: 10px;
+        gap:1px;
+    }
+    header h1{
+        margin-left:-32%;
+        margin-top:8%;
+        font-size:15px;
+    }
+    #msg{
+        font-size:1rem;
+    }
+    .buscador{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:75%;
+    }
+    .buscador:hover{
+        width:90%;
+    }
+    .buscador form{
+        width:100%;
+        font-size:10px;
+    }
+    .buscador form:hover{
+        width:100%;
+        font-size:10px;
+    }
+    .btnBuscar{
+        width: 55px;
+        height:25px;
+    }
+    #produtos{
+        font-size:20px;
+    }
+    .cartazes{
+        height:350px;
+    }
+    .cartazes2{
+        height:320px;
+    }
+    .card{
+        height:76px;
+    }
+    .card div{
+        padding:10px;
+    }
+    .card h1{
+        margin-top:180%;
+        font-size: 15px;
+    }
+    .card:hover{
+        height:260px;
+    }
+    .card span{
+        font-size: 12px;
+    }
+    .card h2{
+        font-size:10px;
+    }
+    .card button{
+        font-size:10px;
+        width:80%;
+    }
+    .img-redes{
+        width:35px;
+        margin-left:15%;
+    }
+    footer  p{
+        margin-left:-62%;
+        font-size:13px;     
+    }
+}

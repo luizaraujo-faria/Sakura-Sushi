@@ -3,129 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="shortcut icon" href="./img/logo sakura sushi.webp">
+    <link rel="shortcut icon" href="src/assets/icon/Logo.png" sizes="64x64" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anton+SC&family=Audiowide&family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
     <title>Sakura Sushi</title>
 </head>
-<body>
+<body id="body" class="font-afacad scrollbar-body">
+    <!--HEADER-->
+    <header id="header" class="w-full h-28 fixed z-40 flex-box transition-all duration-300">
 
-    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="menu-icon" class="size-8 text-white cursor-pointer absolute left-[5%]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="search-icon" class="size-7 text-white cursor-pointer absolute left-[10%]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
         
-        <img src="./img/logo sakura sushi.webp"/>
-        <input type="text" placeholder="Buscar mais..." id="busca">
-        <h1>Sakura Sushi</h1>
-        <nav>
-            <ul>
-                <li><a href= "#">Inicio</a></li>
-                <li><a href= "#">Contato</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-            </ul>
-        </nav>  
+        <h1 class="text-yellow-500 text-5xl font-medium font-cinzel">Sakura Sushi</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 text-white cursor-pointer absolute right-[5%]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+        </svg>          
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 text-white cursor-pointer absolute right-[10%]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
     </header>
-        <video src="./midia/vidbanner.mp4" 
-        loop
-        autoplay
-        muted>
+    <!--OVERLAY COMPONENTES-->
+    <div id="overlay" class="w-full h-screen fixed z-[-1] backdrop-blur-sm bg-[#00000080] transition-all duration-500"></div>
+    <!--BARRA DE MENU-->
+    <aside id="menu-bar" class="flex-box-col justify-end gap-5 overflow-y-scroll scrollbar-body fixed z-50 w-2/6 h-screen bg-black transition-all duration-300 ease-in-out translate-x-[-100%]">
+        <!--HEADER BARRA DE MENU-->
+        <header class="w-full h-36 relative flex-box p-5">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="menu-close" class="size-8 text-white cursor-pointer absolute left-[15%]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+        </header>
+        <!--CORPO DA BARRA DE MENU-->
+        <nav class="w-full h-full relative flex-box">
+            <ul class="w-4/5 h-full flex flex-col justify-center gap-5 p-5">
+                <li class="text-white text-2xl font-light relative w-min transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">INÍCIO</a></li>
+                <li class="text-white text-2xl font-light relative w-min transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">CARDÁPIO</a></li>
+                <li class="text-white text-2xl font-light relative w-min transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">PROMOÇÕES</a></li>
+                <li class="text-white text-2xl font-light relative w-min transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">FEEDBACK</a></li>
+                <li class="text-white text-2xl font-light relative w-min transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">DELIVERY</a></li>
+                <li class="text-white text-2xl font-light relative w-min transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">RESERVAS</a></li>
+            </ul>
+        </nav>
+        <!--SESSAO INFORMATIVA BARRA DE MENU-->
+        <section class="w-4/5 h-3/5 flex flex-col gap-5 p-5 mb-[-50%] relative border-t-yellow-700 border-t-[1px]">
+            <h2 class="text-white text-2xl font-light">CONTATO</h2>
+            <ul>
+                <li class="text-white text-xl font-light w-max relative transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">+55 (11) 11111-1111</a></li>
+                <li class="text-white text-xl font-light w-max relative transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">sakurasushi@gmail.com</a></li>
+            </ul>
+            <h2 class="text-white text-2xl font-light">SOBRE</h2>
+            <ul>
+                <li class="text-white text-xl font-light w-max relative transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">Sobre Nós</a></li>
+                <li class="text-white text-xl font-light w-max relative transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">Trabalhe Conosco</a></li>
+            </ul>
+            <h2 class="text-white text-2xl font-light">LOCALIZAÇÃO</h2>
+            <ul>
+                <li class="text-white text-xl font-light w-max relative transition-all duration-300 hover:text-yellow-500 first-letter:text-yellow-500 before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-px before:bg-yellow-500 before:transition-all before:duration-300 hover:before:w-full"><a href="">Restaurantes Proxima</a></li>
+            </ul>
+        </section>
+    </aside>
+    <!--BARRA DE PESQUISA-->
+    <section id="search-bar" class="w-full h-2/4 fixed bg-black z-50 flex-box transition-all duration-300 ease-in-out translate-y-[-100%]">
 
-        </video>
-        <p id="msg">Faça seu pedido:</p>
-    <section class="buscador">
-        <form name="buscador">
-            <div>
-                <label>Selecione sua comida:</label> 
-                <select name="comida" id="idcomida">
-                    <option value="">Temaki</option>
-                    <option value="">Sushi</option>
-                    <option value="">Hot Roll</option>
-                    <option value="">Sashimi</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Selecione a sua bebida:</label>
-                    <select name="bebida" id="bebida">
-                        <option value="">Coca-Cola</option>
-                        <option value="">Guarana</option>
-                        <option value="">Suco</option>
-                        <option value="">Fanta</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="submit" value="Buscar" class="btnBuscar">
-                </div>
-            </form>
-         </section>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="search-close" class="size-8 text-white cursor-pointer absolute left-[10%] top-[10%]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+        <!--INPUT DE PESQUISA-->
+        <div class="w-2/4 h-12 flex-box gap-5 absolute top-[10%] border-white border-[1px] p-3 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="search-btn" class="size-7 text-white cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+            <input type="text" name="" id="search-input" placeholder="Pesquisar" class="w-3/4 h-4 p-3 text-white placeholder:text-white bg-transparent group border-r-yellow-500 border-r-[1px] border-l-yellow-500 border-l-[1px] outline-none ">
+            <h3 id="clear-btn" class="text-white cursor-pointer">Limpar</h3>
+        </div>
+        <img src="./src/assets/icon/Logo.png" class="size-64 object-cover absolute bottom-0" alt="Logo">
+    </section>
+    <!--CONTEÚDO PRINCIPAL DA PAGINA-->
+    <main class="w-full flex-box-col">
+        <section style="background-image: url(./src/assets/img/banner.webp);" class="sections h-[90vh] bg-center bg-no-repeat bg-cover bg-fixed brightness-[45%]"></section>
+        <section class="sections bg-black">
+            <div class="w-full h-full grid grid-cols-2 place-items-center relative">
 
-         <h1 id="produtos">Produtos em Destaque</h1>
-         <section class="cartazes">
-            <div class="card">
-                <img src="./img/sushiimg.jpg">
-                <div>
-                    <h1>Sushi</h1>
-                    <h2>Porção com 8 unidades e molhos especiais por conta da casa.</h2>
-                    <span>R$27,90</span>
-                    <button>Saber mais</button>
+                <article class="w-[90%] h-3/5 relative grid-start-1 flex-box-col items-start justify-start gap-5">
+
+                    <h1 class="text-white text-3xl">Experiencie a culinária <span class="text-yellow-500">japonesa</span></h1>
+                    <p class="text-white text-justify text-xl">Descubra os sabores autênticos da culinária japonesa em cada detalhe. Ingredientes frescos, técnicas tradicionais e um toque de inovação para tornar cada refeição uma experiência única. Venha saborear o melhor da gastronomia oriental.</p>
+                    <a href="" class="w-2/6 h-12 flex-box border-yellow-500 border-[1px] absolute bottom-1/4"><button class="text-yellow-500 w-full h-full relative z-[2] before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium">ACESSAR CARDAPIO</button></a>
+                </article>
+                <div class="w-full h-full relative grid-start-2">
+                    <img src="./src/assets/img/cartas-1.webp" class="absolute left-[10%] top-[20%] z-[1] size-5/12 object-cover" alt="cartas-1">
+                    <img src="./src/assets/img/cartas-2.webp" class="absolute right-[20%] top-[15%] size-5/12 object-cover" alt="cartas-2">
+                    <img src="./src/assets/img/cartas-3.webp" class="absolute right-[30%] bottom-[10%] size-5/12 object-cover" alt="cartas-3">
                 </div>
             </div>
-
-            <div class="card">
-                <img src="./img/sashimiimg.jpg">
-                <div>
-                    <h1>Sashimi</h1>
-                    <h2>5 Fatias de peixe com frutos do mar e molhos especiais.</h2>
-                    <span>R$35,50</span>
-                    <button>Saber mais</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="./img/temakiimg.jpg">
-                <div>
-                    <h1>Temaki</h1>
-                    <h2>2 Unidades recheada com carnes de peixe cru, frutos do mar, ovas de peixe e legumes.</h2>
-                    <span>R$59,99</span>
-                    <button>Saber mais</button>
-                </div>
-            </div>  
-         </section>
-         <section class="cartazes2">
-            <div class="card">
-                <img src="./img/tempura.jpg">
-                <div>
-                    <h1>Tempura</h1>
-                    <h2>Legumes e mariscos fritos em uma bandeja.</h2>
-                    <span>R$19,90</span>
-                    <button>Saber mais</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="./img/urumaki.jpg">
-                <div>
-                    <h1>Urumaki</h1>
-                    <h2>Porção com 15 unidades e molhos especiais.</h2>
-                    <span>R$49,50</span>
-                    <button>Saber mais</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="./img/ramen.jpg">
-                <div>
-                    <h1>Ramen</h1>
-                    <h2>1 unidade com ovos, carnes, macarrão chinês e molho tarê.</h2>
-                    <span>R$32,44</span>
-                    <button>Saber mais</button>
-                </div>
-            </div> 
+        </section>
+        <section class="sections bg-black border-t-yellow-700 border-t-[1px]">
             
-         </section>
-   <footer>
-            <img src="./img/iconinstagram.png" class="img-redes">
-            <img src="./img/iconlinkedin.png" class="img-redes">
-            <img src="./img/iconfacebook.png" class="img-redes">
-       <p>@Copyright2024-Todos os direitos reservados.</p>
-   </footer>
-
-    
+        </section>
+        <section class="sections bg-black border-t-yellow-700 border-t-[1px]">
+            
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="w-full h-[80vh] bg-black flex-box-col border-t-yellow-700 border-t-[1px]">
+        <!--SESSAO DE COLUNAS INFO-->
+        <section class="w-full h-4/5 grid grid-cols-4 gap-10">
+            <div class="flex-box-col">
+                <header class="w-full h-1/6 bg-black flex-box justify-start p-5"><h2 class="text-yellow-500 text-[1rem] font-normal">AJUDA</h2></header>
+                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3">
+                    <li class="text-white text-[1rem] font-light text-justify">Políticas de Reembolso</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Perguntas Frequentes</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Suporte ao Cliente</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Termos de Serviço</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Privacidade</li>
+                </ul>
+            </div>
+            <div class="flex-box-col">
+                <header class="w-full h-1/6 bg-black flex-box justify-start p-5"><h2 class="text-yellow-500 text-[1rem] font-normal">SERVIÇOS</h2></header>
+                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3">
+                    <li class="text-white text-[1rem] font-light text-justify">Pedido Personalizado</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Delivery</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Rodizio</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Eventos</li>
+                </ul>
+            </div>
+            <div class="flex-box-col">
+                <header class="w-full h-1/6 bg-black flex-box justify-start p-5"><h2 class="text-yellow-500 text-[1rem] font-normal">SAKURA SUSHI</h2></header>
+                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3">
+                    <li class="text-white text-[1rem] font-light text-justify">Sobre Nós</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Trabalhe Conosco</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Contato</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Localização</li>
+                </ul>
+            </div>
+            <div class="flex-box-col">
+                <header class="w-full h-1/6 bg-black flex-box justify-start p-5"><h2 class="text-yellow-500 text-[1rem] font-normal">REDES</h2></header>
+                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3">
+                    <li class="text-white text-[1rem] font-light text-justify">@sakura.sushi.oficial</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Sakura Sushi Profissional</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Sakura Sushi Delivery</li>
+                    <li class="text-white text-[1rem] font-light text-justify">Sakura Sushi Brasil</li>
+                </ul>
+            </div>
+        </section>
+        <!--SESSAO FOOTER DEV-->
+        <section class="w-full h-1/5 border-t-yellow-700 border-t-[1px] flex-box-col">
+            <h3 class="text-white text-xl font-light">LuizAraujo @2025 - Todos Os Direitos Reservados</h3>
+            <div class="flex-box">
+                <a href=""><img src="./src/assets/icon/icon-linkedin.png" alt="icon-rede-dev" class="size-6 brightness-[80%]"></a>
+                <a href=""><img src="./src/assets/icon/icon-instagram.png" alt="icon-rede-dev" class="size-6 brightness-[80%]"></a>
+                <a href=""><img src="./src/assets/icon/icon-github.png" alt="icon-rede-dev" class="size-6 brightness-[80%]"></a>
+            </div>
+        </section>
+    </footer>
 </body>
+<script src="./src/js/index.js"></script>
 </html>

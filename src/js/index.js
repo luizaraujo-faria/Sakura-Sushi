@@ -33,19 +33,14 @@ const searchClose = document.getElementById('search-close')
 const clearBtn = document.getElementById('clear-btn')
 const searchBtn = document.getElementById('search-btn')
 const searchInput = document.getElementById('search-input')
-/*
-let searchList = {
-    "cardapio": "",
-}
-*/
 
 searchIcon.addEventListener('click', () => {
-    searchBar.classList.add('translate-y-0')
+    searchBar.classList.add('translate-y-[0%]')
     overlay.classList.add('z-[50]')
     body.classList.add('overflow-hidden')
 })
 searchClose.addEventListener('click', () => {
-    searchBar.classList.remove('translate-y-0')
+    searchBar.classList.remove('translate-y-[0%]')
     overlay.classList.remove('z-[50]')
     body.classList.remove('overflow-hidden')
 })

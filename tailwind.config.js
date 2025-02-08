@@ -5,7 +5,7 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   important: true,
   mode: 'jit',
-  content: ["./index.html", "./src/**/*.{html,js}"],
+  content: ["./**/*.html", "./src/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {

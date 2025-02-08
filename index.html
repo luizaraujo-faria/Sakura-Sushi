@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,17 +23,20 @@
         
         <h1 class="text-yellow-500 text-5xl font-medium font-cinzel">Sakura Sushi</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 text-white cursor-pointer absolute right-[5%]">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
-        </svg>          
+
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 text-white cursor-pointer absolute right-[10%]">
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-        </svg>
+        </svg>          
+        <a href="./accout.html" class="absolute right-[5%] flex-box">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 text-white cursor-pointer absolute right-[5%]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+            </svg>
+        </a>
     </header>
     <!--OVERLAY COMPONENTES-->
     <div id="overlay" class="w-full h-screen fixed z-[-1] backdrop-blur-sm bg-[#00000080] transition-all duration-500"></div>
     <!--BARRA DE MENU-->
-    <aside id="menu-bar" class="flex-box-col justify-end gap-5 overflow-y-scroll scrollbar-body fixed z-50 w-2/6 h-screen bg-black transition-all duration-300 ease-in-out translate-x-[-100%]">
+    <aside id="menu-bar" class="flex-box-col justify-end gap-5 overflow-y-scroll scrollbar fixed z-50 w-2/6 h-screen bg-black transition-all duration-300 ease-in-out translate-x-[-100%]">
         <!--HEADER BARRA DE MENU-->
         <header class="w-full h-36 relative flex-box p-5">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="menu-close" class="size-8 text-white cursor-pointer absolute left-[15%]">
@@ -87,7 +90,7 @@
     </section>
     <!--CONTEÚDO PRINCIPAL DA PAGINA-->
     <main class="w-full flex-box-col">
-        <section style="background-image: url(./src/assets/img/banner.webp);" class="sections h-[90vh] bg-center bg-no-repeat bg-cover bg-fixed brightness-[45%]"></section>
+        <section style="background-image: url(./src/assets/img/banner.webp);" class="sections h-[90vh] bg-center bg-no-repeat bg-fill bg-fixed brightness-[45%]"></section>
         <section class="sections bg-black">
             <div class="w-full h-full grid grid-cols-2 place-items-center relative">
 
@@ -98,21 +101,47 @@
                     <a href="" class="w-2/6 h-12 flex-box border-yellow-500 border-[1px] absolute bottom-1/4"><button class="text-yellow-500 w-full h-full relative z-[2] before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium">ACESSAR CARDAPIO</button></a>
                 </article>
                 <div class="w-full h-full relative grid-start-2">
-                    <img src="./src/assets/img/cartas-1.webp" class="absolute left-[10%] top-[20%] z-[1] size-5/12 object-cover" alt="cartas-1">
-                    <img src="./src/assets/img/cartas-2.webp" class="absolute right-[20%] top-[15%] size-5/12 object-cover" alt="cartas-2">
-                    <img src="./src/assets/img/cartas-3.webp" class="absolute right-[30%] bottom-[10%] size-5/12 object-cover" alt="cartas-3">
+                    <img src="./src/assets/img/cartas-1.webp" class="absolute left-[10%] top-[20%] z-[1] size-5/12 object-cover" alt="cartas-1" loading="lazy">
+                    <img src="./src/assets/img/cartas-2.webp" class="absolute right-[20%] top-[15%] size-5/12 object-cover" alt="cartas-2" loading="lazy">
+                    <img src="./src/assets/img/cartas-3.webp" class="absolute right-[30%] bottom-[10%] size-5/12 object-cover" alt="cartas-3" loading="lazy">
                 </div>
             </div>
         </section>
-        <section class="sections bg-black border-t-yellow-700 border-t-[1px]">
-            
+        <section style="background-image: url(./src/assets/img/banner-2.webp);" class="sections bg-black bg-center bg-no-repeat bg-cover bg-fixed before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#000000bb]" loading="lazy">
+            <div class="w-2/4 h-3/4 flex-box items-end relative">
+                <h1 class="text-yellow-500 text-5xl font-normal absolute top-0">ATENDIMENTO  </h1>
+                <ul class="w-2/4 h-[90%] flex-box-col gap-10 items-end p-5">
+                    <li class="text-yellow-500 text-3xl font-light">Segunda à Sexta</li>
+                    <li class="text-yellow-500 text-3xl font-light">Sábado e Domingo</li>
+                    <li class="text-yellow-500 text-3xl font-light">Reservar Mesas</li>
+                    <li class="text-yellow-500 text-3xl font-light">Delivery</li>
+                </ul>
+                <hr class="w-[2px] h-[80%] bg-yellow-500">
+                <ul class="w-2/4 h-[90%] flex-box-col gap-10 items-start p-5">
+                    <li class="text-yellow-500 text-3xl font-light">6:00AM - 18:00PM</li>
+                    <li class="text-yellow-500 text-3xl font-light">10:00AM - 16:00PM</li>
+                    <li class="text-yellow-500 text-3xl font-light">(11) 11111-1111</li>
+                    <li class="text-yellow-500 text-3xl font-light">Taxa $15,00</li>
+                </ul>
+            </div>
         </section>
-        <section class="sections bg-black border-t-yellow-700 border-t-[1px]">
-            
+        <section class="sections bg-black">
+            <div class="w-full h-full grid grid-cols-2 place-items-center relative">
+                <img src="./src/assets/img/cartas-principal.webp" class="w-3/5 h-3/4 object-cover" alt="cartas-prato-principal" loading="lazy">
+                
+                <article class="w-[90%] h-3/5 relative grid-start-1 flex-box-col items-start justify-start gap-5">
+                    <h1 class="text-white text-3xl">Experimente o Sabor do <span class="text-yellow-500">California Roll</span></h1>
+                    <p class="text-white text-justify text-xl">Experimente o equilíbrio perfeito de sabores no nosso prato principal California Roll. Feito com arroz japonês, kani, pepino e envolto em deliciosas ovas de peixe, cada pedaço é uma explosão de frescor e textura.</p>
+                    <a href="" class="w-2/6 h-12 flex-box border-yellow-500 border-[1px] absolute bottom-1/4"><button class="text-yellow-500 w-full h-full relative z-[2] before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium">CONFERIR</button></a>
+                </article>
+            </div>
+        </section>
+        <section class="sections bg-black">
+
         </section>
     </main>
     <!--FOOTER-->
-    <footer class="w-full h-[80vh] bg-black flex-box-col border-t-yellow-700 border-t-[1px]">
+    <footer class="w-full h-[80vh] bg-black flex-box-col border-t-yellow-500 border-t-[1px]">
         <!--SESSAO DE COLUNAS INFO-->
         <section class="w-full h-4/5 grid grid-cols-4 gap-10">
             <div class="flex-box-col">
@@ -154,7 +183,7 @@
             </div>
         </section>
         <!--SESSAO FOOTER DEV-->
-        <section class="w-full h-1/5 border-t-yellow-700 border-t-[1px] flex-box-col">
+        <section class="w-full h-1/5 border-t-yellow-900 border-t-[1px] flex-box-col">
             <h3 class="text-white text-xl font-light">LuizAraujo @2025 - Todos Os Direitos Reservados</h3>
             <div class="flex-box">
                 <a href=""><img src="./src/assets/icon/icon-linkedin.png" alt="icon-rede-dev" class="size-6 brightness-[80%]"></a>

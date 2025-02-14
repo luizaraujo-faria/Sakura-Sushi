@@ -6,6 +6,7 @@ module.exports = {
   important: true,
   mode: 'jit',
   content: ["./**/*.html", "./src/**/*.{html,js}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -52,6 +53,13 @@ module.exports = {
           height: '64px',
           backgroundColor: '#790203',
         },
+        '.products': {
+          width: '500px',
+          height: '300px',
+          backgroundColor: '#fff',
+          position: 'relative',
+          cursor: 'pointer',
+        },
         '.scrollbar': {
           '&::-webkit-scrollbar': {
             width: '5px',
@@ -75,6 +83,18 @@ module.exports = {
           },
           '&::-webkit-scrollbar-track': {
             backgroundColor: '#000',
+          },
+        },
+        '.scrollbar-slide': {
+          '&::-webkit-scrollbar': {
+            height: '5px',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            backgroundColor: '#EAB308',
+            borderRadius: '10px',
+          },
+          '&::-webkit-scrollbar-track': {
+            backgroundColor: 'transparent',
           },
         },
       });

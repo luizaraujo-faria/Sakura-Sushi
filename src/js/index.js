@@ -47,3 +47,27 @@ searchClose.addEventListener('click', () => {
 clearBtn.addEventListener('click', () => {
     searchInput.value = ""
 })
+
+//FOOTER RESPONSIVO//
+const mediaQuery = window.matchMedia("(max-width: 640px)");{
+
+    const headerSumary = document.querySelectorAll('.header-sumary')
+    const closeSumary = document.querySelectorAll('.close-sumary')
+    const sumary = document.querySelectorAll('.sumary')
+
+    headerSumary.forEach((headerSumary, index) => {
+        headerSumary.addEventListener('click', () => {
+
+            
+            sumary.forEach((sumary, i) => {
+                if(i !== index){
+                    sumary.classList.remove('max-sm:h-[275px]')
+                    closeSumary[i]?.classList.remove('rotate-[0deg]')
+                }
+            })
+            
+            closeSumary[index].classList.toggle('rotate-[0deg]')
+            sumary[index].classList.toggle('max-sm:h-[275px]')
+        })
+    })
+}

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const texts = document.querySelectorAll('.texts')
     const cards = document.querySelectorAll('.cards')
     const footer = document.querySelectorAll('.footer')
-    const headerFooter = document.querySelectorAll('.header-footer')
+    const headerSumary = document.querySelectorAll('.header-sumary')
 
     let savedIndex = localStorage.getItem("activeIconIndex")
     let savedMode = localStorage.getItem("theme") || 'dark'
@@ -54,15 +54,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const isLight = mode === 'light'
 
         toggleClass(header, 'bg-white', isLight)
-        iconHeader.forEach(icon => toggleClass(icon, 'text-[#000]', isLight))
+        iconHeader.forEach(icon => toggleClass(icon, 'text-[#000000]', isLight))
         iconBar.forEach(icon => toggleClass(icon, 'bg-white', isLight))
-        toggleClass(borded, 'border-[#000]', isLight)
-        toggleClass(searchInput, 'placeholder:text-[#000]', isLight)
+        toggleClass(borded, 'border-[#000000]', isLight)
+        toggleClass(searchInput, 'placeholder:text-[#000000]', isLight)
         sections.forEach(section => toggleClass(section, 'bg-white', isLight))
-        texts.forEach(text => toggleClass(text, 'text-[#000]', isLight))
-        cards.forEach(card => toggleClass(card, 'bg-black', isLight))
+        texts.forEach(text => toggleClass(text, 'text-[#000000]', isLight))
+        cards.forEach(card => toggleClass(card, 'bg-[#000000]', isLight))
         footer.forEach(f => toggleClass(f, 'bg-white', isLight))
-        headerFooter.forEach(hf => toggleClass(hf, 'bg-white', isLight))
+        headerSumary.forEach(hs => toggleClass(hs, 'bg-white', isLight))
 
         savedMode = mode 
     }

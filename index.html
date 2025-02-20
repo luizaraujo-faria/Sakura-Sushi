@@ -22,6 +22,7 @@
         </svg>
         
         <h1 class="text-yellow-500 text-5xl font-medium font-cinzel max-sm:hidden">Sakura Sushi</h1>
+        <img src="./src/assets/icon/Logo Sakura Sushi.png" class="hidden size-28 max-sm:block" alt="Logo">
 
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header-icon size-7 text-white cursor-pointer absolute right-[10%] max-sm:right-[20%]">
@@ -36,14 +37,14 @@
     <!--OVERLAY COMPONENTES-->
     <div id="overlay" class="w-full h-screen fixed z-[-1] backdrop-blur-sm bg-[#00000080] transition-all duration-500"></div>
     <!--BARRA DE MENU-->
-    <aside id="menu-bar" class="icon-bar flex-box-col justify-end gap-5 overflow-y-scroll scrollbar fixed z-50 w-2/6 h-screen bg-black transition-all duration-300 ease-in-out translate-x-[-100%]">
+    <aside id="menu-bar" class="icon-bar flex-box-col justify-end gap-5 overflow-y-scroll scrollbar fixed z-50 w-2/6 h-screen bg-black transition-all duration-300 ease-in-out translate-x-[-100%] max-sm:w-full">
         <!--HEADER BARRA DE MENU-->
         <header class="w-full h-36 relative flex-box p-5">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="menu-close" class="texts size-8 text-white cursor-pointer absolute left-[15%]">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
 
-        <div class="w-1/4 h-10 flex-box justify-between absolute right-[5%] border-neutral-900 border-[1px] border-solid rounded-full p-2">
+        <div class="w-1/4 h-10 flex-box justify-between absolute right-[5%] border-neutral-900 border-[1px] border-solid rounded-full p-2 max-sm:w-4/12">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="light" class="mode-icon size-7 text-gray-500 cursor-pointer hover:text-yellow-500">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
             </svg>
@@ -89,14 +90,14 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
         <!--INPUT DE PESQUISA-->
-        <div class="borded w-2/4 h-12 flex-box gap-5 absolute top-[10%] border-white border-b-[1px] p-3">
+        <div class="borded w-2/4 h-12 flex-box gap-5 absolute top-[10%] border-white border-b-[1px] p-3 max-sm:top-[35%] max-sm:w-[90%]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="search-btn" class="texts size-7 text-white cursor-pointer">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
             <input type="text" name="" id="search-input" placeholder="Pesquisar" class="texts w-3/4 h-4 p-3 text-white placeholder:text-white bg-transparent group border-r-yellow-500 border-r-[1px] border-l-yellow-500 border-l-[1px] outline-none ">
             <h3 id="clear-btn" class="texts text-white cursor-pointer">Limpar</h3>
         </div>
-        <img src="./src/assets/icon/Logo Sakura Sushi 2.png" class="size-52 object-cover absolute bottom-0" alt="Logo">
+        <img src="./src/assets/icon/Logo Sakura Sushi.png" class="size-52 object-cover absolute bottom-0 max-sm:size-32" alt="Logo">
     </section>
     <!--CONTEÚDO PRINCIPAL DA PAGINA-->
     <main class="w-full flex-box-col">
@@ -117,21 +118,21 @@
                 </div>
             </div>
         </section>
-        <section style="background-image: url(./src/assets/img/banner-2.webp);" class="sections bg-black bg-center bg-no-repeat bg-cover bg-fixed before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#000000bb]" loading="lazy">
-            <div class="w-2/4 h-3/4 flex-box items-end relative">
-                <h1 class="text-yellow-500 text-5xl font-normal absolute top-0">ATENDIMENTO  </h1>
-                <ul class="w-2/4 h-[90%] flex-box-col gap-10 items-end p-5">
-                    <li class="text-yellow-500 text-3xl font-light">Segunda à Sexta</li>
-                    <li class="text-yellow-500 text-3xl font-light">Sábado e Domingo</li>
-                    <li class="text-yellow-500 text-3xl font-light">Reservar Mesas</li>
-                    <li class="text-yellow-500 text-3xl font-light">Delivery</li>
+        <section style="background-image: url(./src/assets/img/banner-2.webp);" class="sections bg-black bg-center bg-no-repeat bg-cover bg-fixed before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#000000bb] max-sm:h-[70vh]" loading="lazy">
+            <div class="w-2/4 h-3/4 flex-box items-end relative max-sm:w-full ">
+                <h1 class="text-yellow-500 text-5xl font-normal absolute top-0 max-sm:text-3xl">ATENDIMENTO  </h1>
+                <ul class="w-2/4 h-[90%] flex-box-col gap-10 items-end p-5 max-sm:w-full max-sm:p-1">
+                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">Segunda à Sexta</li>
+                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">Sábado e Domingo</li>
+                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">Reservar Mesas</li>
+                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">Delivery</li>
                 </ul>
-                <hr class="w-[2px] h-[80%] bg-yellow-500">
-                <ul class="w-2/4 h-[90%] flex-box-col gap-10 items-start p-5">
-                    <li class="text-yellow-500 text-3xl font-light">6:00AM - 18:00PM</li>
-                    <li class="text-yellow-500 text-3xl font-light">10:00AM - 16:00PM</li>
-                    <li class="text-yellow-500 text-3xl font-light">(11) 11111-1111</li>
-                    <li class="text-yellow-500 text-3xl font-light">Taxa $15,00</li>
+                <hr class="w-[2px] h-[80%] bg-yellow-500 max-sm:hidden">
+                <ul class="w-2/4 h-[90%] flex-box-col gap-10 items-start p-5 max-sm:w-full max-sm:p-1">
+                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">6:00AM - 18:00PM</li>
+                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">10:00AM - 16:00PM</li>
+                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">(11) 11111-1111</li>
+                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">Taxa $15,00</li>
                 </ul>
             </div>
         </section>
@@ -146,39 +147,39 @@
                 </article>
             </div>
         </section>
-        <section class="sections bg-black border-t-white border-2">
+        <section class="sections bg-black">
 
             <div class="w-full h-full flex-box-col justify-evenly">
                 <article class="flex-box-col gap-3">
-                    <h1 class="texts text-white text-3xl font-light">CONFIRA <span class="text-yellow-500">NOSSOS</span> PRATOS MAIS FAMOSOS</h1>
+                    <h1 class="texts text-white text-3xl font-light max-sm:text-center">CONFIRA <span class="text-yellow-500">NOSSOS</span> PRATOS MAIS FAMOSOS</h1>
                     <h2 class="texts text-white text-2xl font-light">Seja nosso <span class="text-yellow-500">cliente</span></h2>
                 </article>
 
                 <section class="slide-box w-[90%] h-2/4 overflow-x-scroll overflow-hidden scrollbar-slide">
-                    <div class="slider w-[200%] flex gap-5 flex-row p-2">
+                    <div class="slider w-[200%] flex gap-5 flex-row p-2 max-sm:w-[800%]">
     
-                        <div class="cards products flex-box before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
+                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
                             <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
                         </div>
-                        <div class="cards products flex-box before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
+                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
                             <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
                         </div>
-                        <div class="cards products flex-box before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
+                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
                             <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
                         </div>
-                        <div class="cards products flex-box before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
+                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
                             <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
                         </div>
-                        <div class="cards products flex-box before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
+                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
                             <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
                         </div>
-                        <div class="cards products flex-box before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
+                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
                             <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
                         </div>
-                        <div class="cards products flex-box before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
+                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
                             <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
                         </div>
-                        <div class="cards products flex-box before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
+                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
                             <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
                         </div>
     
@@ -190,12 +191,17 @@
         </section>
     </main>
     <!--FOOTER-->
-    <footer class="w-full h-[80vh] bg-black flex-box-col border-t-yellow-500 border-t-[1px]">
+    <footer class="w-full h-[80vh] bg-black flex-box-col border-t-yellow-500 border-t-[1px] max-sm:justify-start max-sm:h-auto">
         <!--SESSAO DE COLUNAS INFO-->
-        <section class="footer w-full h-4/5 grid grid-cols-4 gap-10">
-            <div class="flex-box-col">
-                <header class="header-footer w-full h-1/6 bg-black flex-box justify-start p-5"><h2 class="text-yellow-500 text-[1rem] font-normal">AJUDA</h2></header>
-                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3">
+        <section class="footer w-full h-4/5 grid grid-cols-4 gap-10 max-sm:grid-cols-1 max-sm:gap-0 max-sm:h-auto">
+            <div class="sumary flex-box-col overflow-hidden transition-all duration-300 max-sm:h-[70px] max-sm:relative max-sm:border-b-yellow-500 max-sm:border-b-[1px]">
+                <header class="header-sumary w-full h-1/6 bg-black flex-box justify-start p-5 cursor-pointer max-sm:h-[70px] max-sm:absolute z-[2] max-sm:top-0  max-sm:justify-between">
+                    <h2 class="text-yellow-500 text-[1rem] font-normal">AJUDA</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="texts close-sumary texts size-6 text-white cursor-pointer hidden max-sm:block transition-all duration-300 rotate-[45deg]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </header>
+                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3 overflow-hidden max-sm:absolute max-sm:bottom-0 max-sm:h-auto ">
                     <li class="texts text-white text-[1rem] font-light text-justify">Políticas de Reembolso</li>
                     <li class="texts text-white text-[1rem] font-light text-justify">Perguntas Frequentes</li>
                     <li class="texts text-white text-[1rem] font-light text-justify">Suporte ao Cliente</li>
@@ -203,27 +209,42 @@
                     <li class="texts text-white text-[1rem] font-light text-justify">Privacidade</li>
                 </ul>
             </div>
-            <div class="flex-box-col">
-                <header class="header-footer w-full h-1/6 bg-black flex-box justify-start p-5"><h2 class="text-yellow-500 text-[1rem] font-normal">SERVIÇOS</h2></header>
-                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3">
+            <div class="sumary flex-box-col overflow-hidden transition-all duration-300 max-sm:h-[70px] max-sm:relative max-sm:border-b-yellow-500 max-sm:border-b-[1px]">
+                <header class="header-sumary w-full h-1/6 bg-black flex-box justify-start p-5 cursor-pointer max-sm:h-[70px] max-sm:absolute z-[2] max-sm:top-0  max-sm:justify-between">
+                    <h2 class="text-yellow-500 text-[1rem] font-normal">SERVIÇOS</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="texts close-sumary texts size-6 text-white cursor-pointer hidden max-sm:block transition-all duration-300 rotate-[45deg]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </header>
+                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3 overflow-hidden max-sm:absolute max-sm:bottom-0 max-sm:h-auto ">
                     <li class="texts text-white text-[1rem] font-light text-justify">Pedido Personalizado</li>
                     <li class="texts text-white text-[1rem] font-light text-justify">Delivery</li>
                     <li class="texts text-white text-[1rem] font-light text-justify">Rodizio</li>
                     <li class="texts text-white text-[1rem] font-light text-justify">Eventos</li>
                 </ul>
             </div>
-            <div class="flex-box-col">
-                <header class="header-footer w-full h-1/6 bg-black flex-box justify-start p-5"><h2 class="text-yellow-500 text-[1rem] font-normal">SAKURA SUSHI</h2></header>
-                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3">
+            <div class="sumary flex-box-col overflow-hidden transition-all duration-300 max-sm:h-[70px] max-sm:relative max-sm:border-b-yellow-500 max-sm:border-b-[1px]">
+                <header class="header-sumary w-full h-1/6 bg-black flex-box justify-start p-5 cursor-pointer max-sm:h-[70px] max-sm:absolute z-[2] max-sm:top-0  max-sm:justify-between">
+                    <h2 class="text-yellow-500 text-[1rem] font-normal">SAKURA SUSHI</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="texts close-sumary texts size-6 text-white cursor-pointer hidden max-sm:block transition-all duration-300 rotate-[45deg]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </header>
+                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3 overflow-hidden max-sm:absolute max-sm:bottom-0 max-sm:h-auto ">
                     <li class="texts text-white text-[1rem] font-light text-justify">Sobre Nós</li>
                     <li class="texts text-white text-[1rem] font-light text-justify">Trabalhe Conosco</li>
                     <li class="texts text-white text-[1rem] font-light text-justify">Contato</li>
                     <li class="texts text-white text-[1rem] font-light text-justify">Localização</li>
                 </ul>
             </div>
-            <div class="flex-box-col">
-                <header class="header-footer w-full h-1/6 bg-black flex-box justify-start p-5"><h2 class="text-yellow-500 text-[1rem] font-normal">REDES</h2></header>
-                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3">
+            <div class="sumary flex-box-col overflow-hidden transition-all duration-300 max-sm:h-[70px] max-sm:relative max-sm:border-b-yellow-500 max-sm:border-b-[1px]">
+                <header class="header-sumary w-full h-1/6 bg-black flex-box justify-start p-5 cursor-pointer max-sm:h-[70px] max-sm:absolute z-[2] max-sm:top-0  max-sm:justify-between">
+                    <h2 class="text-yellow-500 text-[1rem] font-normal">REDES</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="texts close-sumary texts size-6 text-white cursor-pointer hidden max-sm:block transition-all duration-300 rotate-[45deg]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </header>
+                <ul class="w-full h-5/6 flex-box-col items-start justify-start p-5 gap-3 overflow-hidden max-sm:absolute max-sm:bottom-0 max-sm:h-auto ">
                     <li class="texts text-white text-[1rem] font-light text-justify">@sakura.sushi.oficial</li>
                     <li class="texts text-white text-[1rem] font-light text-justify">Sakura Sushi Profissional</li>
                     <li class="texts text-white text-[1rem] font-light text-justify">Sakura Sushi Delivery</li>
@@ -232,8 +253,8 @@
             </div>
         </section>
         <!--SESSAO FOOTER DEV-->
-        <section class="footer w-full h-1/5 border-t-yellow-900 border-t-[1px] flex-box-col">
-            <h3 class="texts text-white text-xl font-light">LuizAraujo @2025 - Todos Os Direitos Reservados</h3>
+        <section class="footer w-full h-1/5 border-t-yellow-900 border-t-[1px] flex-box-col max-sm:h-[100px] max-sm:border-none">
+            <h3 class="texts text-white text-xl font-light max-sm:text-[.8rem]">LuizAraujo @2025 - Todos Os Direitos Reservados</h3>
             <div class="flex-box">
                 <a href=""><img src="./src/assets/icon/icon-linkedin.png" alt="icon-rede-dev" class="size-6 brightness-[80%]"></a>
                 <a href=""><img src="./src/assets/icon/icon-instagram.png" alt="icon-rede-dev" class="size-6 brightness-[80%]"></a>

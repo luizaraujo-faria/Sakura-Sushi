@@ -66,7 +66,7 @@ module.exports = {
             height: '100%',
           },
           '&::-webkit-scrollbar-thumb': {
-            backgroundColor: '#fff',
+            backgroundColor: '#EAB308',
             borderRadius: '10px',
           },
           '&::-webkit-scrollbar-track': {

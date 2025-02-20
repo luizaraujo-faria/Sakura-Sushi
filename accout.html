@@ -12,21 +12,21 @@
 </head>
 <body class="font-afacad scrollbar-body">
     <main style="background-image: url(./src/assets/img/banner.webp);" class="w-full h-[150vh] flex-box bg-center bg-cover bg-no-repeat relative before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#00000080]">
-        <a href="./index.html" class="absolute top-[10%] left-[5%]">
+        <a href="./index.html" class="absolute top-[10%] left-[5%] max-sm:z-50 max-sm:top-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 text-white">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
         </svg></a>
         
-        <section class="w-3/5 h-[90%] bg-[#000000e8] flex-box-col absolute z-50 justify-start gap-16 p-5 transition-all duration-300 overflow-hidden">
+        <section class="w-3/5 h-[90%] bg-[#000000e8] flex-box-col absolute z-50 justify-start gap-16 p-5 transition-all duration-300 overflow-hidden max-sm:w-full">
             <div class="w-full h-28 flex-box-col gap-5">
-                <h1 class="text-yellow-500 text-5xl font-cinzel">Sakura Sushi</h1>
-                <h2 class="text-white text-3xl font-light">Acesse sua conta</h2>
+                <h1 class="text-yellow-500 text-5xl font-cinzel max-sm:text-3xl">Sakura Sushi</h1>
+                <h2 class="text-white text-3xl font-light max-sm:text-2xl">Acesse sua conta</h2>
             </div>
             <div class="w-full h-[15%] flex-box-col gap-3">
-                <div class="group w-3/5 h-12 cursor-pointer border-white border-[1px] flex-box justify-evenly relative z-[2] before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium hover:border-yellow-500">
+                <div class="group w-3/5 h-12 cursor-pointer border-white border-[1px] flex-box justify-evenly relative z-[2] max-sm:w-full before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium hover:border-yellow-500">
                     <img src="./src/assets/icon/apple-google.png" alt="Logo-Login" class="size-8 group-hover:brightness-0">
                     <h2 class="text-white text-xl group-hover:text-black">Entrar com Google</h2></div>
-                <div class="group w-3/5 h-12 cursor-pointer border-white border-[1px] flex-box justify-evenly relative z-[2] before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium hover:border-yellow-500">
+                <div class="group w-3/5 h-12 cursor-pointer border-white border-[1px] flex-box justify-evenly relative z-[2] max-sm:w-full before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium hover:border-yellow-500">
                     <img src="./src/assets/icon/icon-apple.png" alt="Logo-Login" class="size-8 group-hover:brightness-0">
                     <h2 class="text-white text-xl group-hover:text-black">Entrar com Apple</h2></div>
             </div>
@@ -34,18 +34,17 @@
                 <hr class="w-2/4 h-[1px] bg-white">
                 <h3 class="text-white text-xl absolute bg-black w-12 flex-box">OU</h3>
             </div>
-            <form action="" class="w-3/5 flex-box-col gap-8">
-                <h2 class="text-white text-3xl font-light">Entre com Email e Senha</h2>
+            <form action="" class="w-3/5 flex-box-col gap-8 max-sm:w-full">
+                <h2 class="text-white text-3xl font-light ">Entre com Email e Senha</h2>
                 <input type="text" placeholder="Seu Email" autocomplete="new-password" class="w-full h-12 p-5 bg-transparent text-white outline-none border-white border-[1px] focus:border-yellow-500 focus:border-[1px] placeholder:text-white">
                 <input type="password" placeholder="Sua Senha" autocomplete="new-password" class="w-full h-12 p-5 bg-transparent text-white outline-none border-white border-[1px] focus:border-yellow-500 focus:border-[1px] placeholder:text-white">
-                <button type="submit" class="text-white text-xl border-yellow-500 border-[1px] w-2/4 h-12 relative z-[2] before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium">Enviar</button>
-                <div class="w-full h-10 flex-box justify-between">
-                    <a href="" class="text-white text-xl font-light">Esqueceu a senha?</a>
-                    <a href="" class="text-white text-xl font-light">Não possui uma conta?</a>
+                <button type="submit" class="text-white text-xl border-yellow-500 border-[1px] w-2/4 h-12 relative z-[2] max-sm:h-10 max-sm:w-full before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium">Enviar</button>
+                <div class="w-full h-10 flex-box justify-between max-sm:flex-box-col">
+                    <a href="" class="text-white text-xl font-light max-sm:text-[1rem]">Esqueceu a senha?</a>
+                    <a href="" class="text-white text-xl font-light max-sm:text-[1rem]">Não possui uma conta?</a>
                 </div>
             </form>
         </section>
     </main>
 </body>
-<script src="./src/js/accout.js"></script>
 </html>

@@ -60,6 +60,49 @@ module.exports = {
           position: 'relative',
           cursor: 'pointer',
         },
+        '.cards-menu': {
+          width: '250px',
+          height: '325px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'start',
+          flexDirection: 'column',
+          background: '#EAB308',
+          position: 'relative',
+          overflow: 'hidden',
+          cursor: 'pointer',
+          transition: '.5s',
+          borderRadius: '10px',
+          boxShadow: '2px 3px 5px #292524',
+          padding: '20px',
+          gap: '20px'
+          
+        },
+        '.cards-menu:hover .menu-img': {
+          scale: '1.10',
+          height: '55%',
+          filter: 'brightness(100%)'
+        },
+        '.cards-menu:hover': {
+          scale: '1.10',
+        },
+        '.menu-img': {
+          width: '80%',
+          height: '50%',
+          objectFit: 'cover',
+          transition: '.5s',
+          borderRadius: '10px',
+          filter: 'brightness(40%)',
+          boxShadow: '2px 3px 5px #292524',
+        },
+        '.card-title': {
+          fontSize: '2.5rem',
+          fontWeight: '400',
+          color: '#000'
+        },
+        '.hide': {
+          display: 'none'
+        },
         '.scrollbar': {
           '&::-webkit-scrollbar': {
             width: '5px',

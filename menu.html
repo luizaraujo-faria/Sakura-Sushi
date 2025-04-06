@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anton+SC&family=Audiowide&family=Cinzel:wght@400..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/output.css">
-    <title>Sakura Sushi</title>
+    <title>Cardápio | Sakura Sushi</title>
 </head>
 <body id="body" class="font-afacad scrollbar-body">
     <!--HEADER-->
-    <header id="header" class="header w-full h-28 fixed z-40 flex-box transition-all duration-300">
+    <header id="header" class="w-full h-28 fixed z-40 flex-box transition-all duration-300">
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="menu-icon" class="header-icon size-8 text-white cursor-pointer absolute left-[5%]">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -99,99 +99,110 @@
         </div>
         <img src="./src/assets/icon/Logo Sakura Sushi.png" class="size-52 object-cover absolute bottom-0 max-sm:size-32" alt="Logo">
     </section>
-    <!--CONTEÚDO PRINCIPAL DA PAGINA-->
-    <main class="w-full flex-box-col">
-        <section style="background-image: url(./src/assets/img/banner.webp);" class="sections h-[90vh] bg-center bg-no-repeat bg-fill bg-fixed brightness-[45%] max-sm:h-[60vh]"></section>
-        <section class="sections bg-black max-sm:h-[130vh]">
-            <div class="w-full h-full grid grid-cols-2 place-items-center relative max-sm:grid-cols-1 max-sm:place-items-start max-sm:p-5">
+    <!--CONTAINER DE INFORMAÇÕES DOS PRATOS-->
+    <section id="info-prato" class="w-[80%] h-[80%] bg-black fixed z-50 left-2/4 top-2/4 translate-x-[-50%] translate-y-[-45%] overflow-hidden hidden">
 
-                <article class="w-[90%] h-3/5 relative grid-start-1 flex-box-col items-start justify-start gap-5 max-sm:w-full max-sm:items-center">
+        <header class="w-full h-12 flex-box justify-end p-5 gap-96  border-b-[1px] border-b-yellow-500">
+            <h1 class="text-yellow-500 text-3xl font-medium font-cinzel max-sm:hidden">Sakura Sushi</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="info-close" class="texts size-8 text-white cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </header>
 
-                    <h1 class="texts text-white text-3xl">Experiencie a culinária <span class="text-yellow-500">japonesa</span></h1>
-                    <p class="texts text-white text-justify text-xl">Descubra os sabores autênticos da culinária japonesa em cada detalhe. Ingredientes frescos, técnicas tradicionais e um toque de inovação para tornar cada refeição uma experiência única. Venha saborear o melhor da gastronomia oriental.</p>
-                    <a href="" class="w-2/6 h-12 flex-box border-yellow-500 border-[1px] absolute bottom-1/4 max-sm:bottom-[-10%] max-sm:w-4/6"><button class="texts text-yellow-500 w-full h-full relative z-[2] before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium">ACESSAR CARDAPIO</button></a>
-                </article>
-                <div class="w-full h-full relative grid-start-2">
-                    <img src="./src/assets/img/cartas-1.webp" class="absolute left-[10%] top-[20%] z-[1] size-5/12 object-cover max-sm:size-8/12 max-sm:top-[-20%] max-sm:left-[-5%]" alt="cartas-1" loading="lazy">
-                    <img src="./src/assets/img/cartas-2.webp" class="absolute right-[20%] top-[15%] size-5/12 object-cover max-sm:size-8/12 max-sm:top-[-25%] max-sm:right-[-5%]" alt="cartas-2" loading="lazy">
-                    <img src="./src/assets/img/cartas-3.webp" class="absolute right-[30%] bottom-[10%] size-5/12 object-cover max-sm:size-8/12 max-sm:right-[15%]" alt="cartas-3" loading="lazy">
+        <main class="w-full h-[90%] flex-box gap-16">
+            <img src="" id="info-img" class="w-[25%] h-[80%] object-cover dark:brightness-75">
+
+            </img>
+            <section class="more-info w-[60%] h-[80%] flex-box-col gap-16 items-start relative">
+                <div class="w-1/4 h-8"><h1 id="info-name" class="text-5xl font-light text-white texts"></h1></div>
+                <div class="w-[90%] h-auto"><p id="info-desc" class="text-xl text-justify font-light text-white texts"></p></div>
+                <div class="w-1/4 h-8"><h2 class="text-2xl text-white texts">Preço: <span id="info-price" class="text-xl"></span></h2></div>
+
+                <div class="w-[30%] h-12 flex-box border-yellow-500 border-[1px] absolute bottom-[10%] right-[40%] max-sm:bottom-[-10%] max-sm:w-4/6"><button class="texts text-yellow-500 w-full h-full relative z-[2] before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium">COMPRAR</button></div>
+                <div class="w-[30%] h-12 flex-box border-yellow-500 border-[1px] absolute bottom-[10%] right-[5%] max-sm:bottom-[-10%] max-sm:w-4/6"><button class="texts text-yellow-500 w-full h-full relative z-[2] before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium">SALVAR</button></div>
+            </section>
+        </main>
+    </section>
+    <!--CONTEUDO PRINCIPAL DA PAGINA-->
+    <main class="relative w-full  flex-box-col">
+        <section class="sections h-[80vh] bg-black bg-center bg-cover bg-no-repeat before:content-[''] before:absolute z-[-1] before:left-0 before:top-0 before:w-full before:h-full before:bg-[#0000009f]" style="background-image: url(./src/assets/img/banner-2.webp);">
+
+            <div class="flex-box-col gap-5 relative z-[2] bottom-[-20%]">
+                <h1 class="text-5xl font-light text-white"><span class="text-yellow-500">Confira</span> nossas <span class="text-yellow-500">delícias</span> em nosso cardápio</h1>
+                <h2 class="text-3xl font-light text-white">Experimente o que a <span class="text-yellow-500">Sakura Sushi</span> oferece de <span class="text-yellow-500">melhor</span></h2>
+            </div>
+
+        </section>
+
+        <section class="sections h-auto bg-black p-32">
+
+            <!--SESSAO DOS PRATOS-->
+            <div class="cards-container w-full h-auto flex-box flex-wrap gap-8">
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
+                </div>
+                <div class="cards-menu">
+                    <hr class="absolute w-full h-[2px] top-[40%] bg-black border-black">
+                    <img class="menu-img" src="" alt="imagem-prato">
+                    <h1 class="card-title"></h1>
                 </div>
             </div>
         </section>
-        <section style="background-image: url(./src/assets/img/banner-2.webp);" class="sections bg-black bg-center bg-no-repeat bg-cover bg-fixed before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#000000bb] max-sm:h-[70vh]" loading="lazy">
-            <div class="w-2/4 h-3/4 flex-box items-end relative max-sm:w-full ">
-                <h1 class="text-yellow-500 text-5xl font-normal absolute top-0 max-sm:text-3xl">ATENDIMENTO  </h1>
-                <ul class="w-2/4 h-[90%] flex-box-col gap-10 items-end p-5 max-sm:w-full max-sm:p-1">
-                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">Segunda à Sexta</li>
-                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">Sábado e Domingo</li>
-                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">Reservar Mesas</li>
-                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">Delivery</li>
-                </ul>
-                <hr class="w-[2px] h-[80%] bg-yellow-500 max-sm:hidden">
-                <ul class="w-2/4 h-[90%] flex-box-col gap-10 items-start p-5 max-sm:w-full max-sm:p-1">
-                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">6:00AM - 18:00PM</li>
-                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">10:00AM - 16:00PM</li>
-                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">(11) 11111-1111</li>
-                    <li class="text-yellow-500 text-3xl font-light max-sm:text-xl">Taxa $15,00</li>
-                </ul>
-            </div>
-        </section>
-        <section class="sections bg-black max-sm:h-[130vh]">
-            <div class="w-full h-full grid grid-cols-2 place-items-center relative max-sm:grid-cols-1 max-sm:p-5">
-                <img src="./src/assets/img/cartas-principal.webp" class="w-3/5 h-3/4 object-cover max-sm:w-4/5" alt="cartas-prato-principal" loading="lazy">
-                
-                <article class="w-[90%] h-3/5 relative grid-start-1 flex-box-col items-start justify-start gap-5 max-sm:w-full max-sm:items-center max-sm:justify-end">
-                    <h1 class="texts text-white text-3xl">Experimente o Sabor do <span class="text-yellow-500">California Roll</span></h1>
-                    <p class="texts text-white text-justify text-xl">Experimente o equilíbrio perfeito de sabores no nosso prato principal California Roll. Feito com arroz japonês, kani, pepino e envolto em deliciosas ovas de peixe, cada pedaço é uma explosão de frescor e textura.</p>
-                    <a href="" class="w-2/6 h-12 flex-box border-yellow-500 border-[1px] absolute bottom-1/4 max-sm:bottom-[-25%] max-sm:w-4/6"><button class="texts text-yellow-500 w-full h-full relative z-[2] before:content-[''] before:absolute before:z-[-1] before:bg-yellow-500 before:left-0 before:top-0 before:w-full before:h-full before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] hover:text-black hover:font-medium">CONFERIR</button></a>
-                </article>
-            </div>
-        </section>
-        <section class="sections bg-black">
-
-            <div class="w-full h-full flex-box-col justify-evenly">
-                <article class="flex-box-col gap-3">
-                    <h1 class="texts text-white text-3xl font-light max-sm:text-center">CONFIRA <span class="text-yellow-500">NOSSOS</span> PRATOS MAIS FAMOSOS</h1>
-                    <h2 class="texts text-white text-2xl font-light">Seja nosso <span class="text-yellow-500">cliente</span></h2>
-                </article>
-
-                <section class="slide-box w-[90%] h-2/4 overflow-x-scroll overflow-hidden scrollbar-slide">
-                    <div class="slider w-[200%] flex gap-5 flex-row p-2 max-sm:w-[800%]">
-    
-                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
-                            <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
-                        </div>
-                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
-                            <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
-                        </div>
-                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
-                            <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
-                        </div>
-                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
-                            <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
-                        </div>
-                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
-                            <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
-                        </div>
-                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
-                            <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
-                        </div>
-                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
-                            <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
-                        </div>
-                        <div class="cards products flex-box max-sm:w-[75%] before:content-['LOREM'] before:flex-box before:text-3xl before:text-white before:absolute before:w-full before:h-2/4 before:bottom-0 before:bg-[#000000e8] before:scale-y-0 before:transition-all before:duration-300 before:ease-custom-ease hover:before:scale-y-[1] transition-all duration-300 hover:rounded-[10px] hover:scale-[1.1]">
-                            <img src="./src/assets/icon/Logo Sakura Sushi.png" alt="">
-                        </div>
-    
-                    </div>
-                </section>
-            </div>
-
-
-        </section>
     </main>
     <!--FOOTER-->
-    <footer class="w-full h-[80vh] bg-black flex-box-col border-t-yellow-500 border-t-[1px] max-sm:justify-start max-sm:h-auto">
+    <footer class="w-full h-[80vh] relative bg-black flex-box-col border-t-yellow-500 border-t-[1px] max-sm:justify-start max-sm:h-auto">
         <!--SESSAO DE COLUNAS INFO-->
         <section class="footer w-full h-4/5 grid grid-cols-4 gap-10 max-sm:grid-cols-1 max-sm:gap-0 max-sm:h-auto">
             <div class="sumary flex-box-col overflow-hidden transition-all duration-300 max-sm:h-[70px] max-sm:relative max-sm:border-b-yellow-500 max-sm:border-b-[1px]">
@@ -263,7 +274,7 @@
         </section>
     </footer>
 </body>
-<script src="./src/js/index.js"></script>
+<script src="./src/js/menu.js"></script>
 <script src="./src/js/theme.js"></script>
 <script src="./src/js/shared/shared.js"></script>
 </html>

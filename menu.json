@@ -1,0 +1,74 @@
+[
+    {
+        "nome": "Sushi",
+        "desc": "Pequenos bolinhos de arroz temperado combinados com peixe cru, frutos do mar ou vegetais, frequentemente envolvidos em alga nori. Uma das iguarias mais populares da culinária japonesa.",
+        "preco": "R$ 15,00",
+        "img": "./src/assets/img/sushi.webp"
+    },
+    {
+        "nome": "Temaki",
+        "desc": "Cone de alga nori recheado com arroz, peixe cru (como salmão ou atum), cream cheese, cebolinha e outros ingredientes, proporcionando uma explosão de sabores a cada mordida.",
+        "preco": "R$ 27,50",
+        "img": "./src/assets/img/temaki.webp"
+    },
+    {
+        "nome": "Ramen",
+        "desc": "Saboroso macarrão japonês servido em caldo quente e temperado, acompanhado de ingredientes como carne suína, ovo cozido, cebolinha, algas e broto de bambu. Uma refeição reconfortante e cheia de umami.",
+        "preco": "R$ 29,90",
+        "img": "./src/assets/img/ramen.webp"
+    },
+    {
+        "nome": "Yakisoba",
+        "desc": "Macarrão salteado na chapa com legumes e proteína (frango, carne ou camarão), temperado com molho especial à base de shoyu e especiarias orientais. Um prato equilibrado e muito saboroso.",
+        "preco": "R$ 32,40",
+        "img": "./src/assets/img/yakisoba.webp"
+    },
+    {
+        "nome": "Shimeji",
+        "desc": "Cogumelos shimeji preparados na manteiga e molho shoyu, frequentemente servidos como entrada. Um prato leve, aromático e cheio de umami.",
+        "preco": "R$ 25,00",
+        "img": "./src/assets/img/shimeji.webp"
+    },
+    {
+        "nome": "Nigiri",
+        "desc": "Porção de arroz moldado à mão coberto com fatia de peixe cru (salmão, atum, camarão ou outros frutos do mar), podendo ser finalizado com um toque de wasabi. Uma das formas mais tradicionais de sushi.",
+        "preco": "R$ 20,90",
+        "img": "./src/assets/img/nigiri.webp"
+    },
+    {
+        "nome": "Gyoza",
+        "desc": "Pequenos pastéis japoneses recheados com carne suína, frango ou vegetais, grelhados e cozidos ao vapor, servidos com molho shoyu e óleo de gergelim. Crocante por fora e suculento por dentro.",
+        "preco": "R$ 24,50",
+        "img": "./src/assets/img/gyoza.webp"
+    },
+    {
+        "nome": "Harumaki",
+        "desc": "Versão japonesa do rolinho primavera, recheado com carne, frango ou legumes, envolto em massa fina e crocante, frito até dourar e servido com molho agridoce.",
+        "preco": "R$ 27,00",
+        "img": "./src/assets/img/harumaki.webp"
+    },
+    {
+        "nome": "Hot Roll",
+        "desc": "Uma variação ocidentalizada do sushi, esse rolinho é recheado com arroz, cream cheese e peixe, empanado e frito, resultando em uma casquinha crocante por fora e um interior cremoso.",
+        "preco": "R$ 23,70",
+        "img": "./src/assets/img/hotroll.webp"
+    },
+    {
+        "nome": "Tataki",
+        "desc": "Tiras de carne ou peixe (geralmente atum ou filé mignon) levemente grelhadas por fora e cruas por dentro, servidas com molho cítrico e cebolinha para realçar o sabor.",
+        "preco": "R$ 19,90",
+        "img": "./src/assets/img/tataki.webp"
+    },
+    {
+        "nome": "Teryaki",
+        "desc": "Carne (geralmente frango, boi ou salmão) grelhada e caramelizada em molho teriyaki à base de shoyu, saquê e açúcar, proporcionando um sabor agridoce e irresistível.",
+        "preco": "R$ 25,90",
+        "img": "./src/assets/img/teryaki.webp"
+    },
+    {
+        "nome": "Salmão",
+        "desc": "Peixe nobre e versátil da culinária japonesa, servido cru em sashimis, sushis ou grelhado com temperos leves. Rico em sabor e gorduras saudáveis.",
+        "preco": "R$ 18,90",
+        "img": "./src/assets/img/salmao.webp"
+    }
+]
